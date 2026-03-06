@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharanya Portfolio</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, aquamarine, lightblue);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #0077cc;
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #0077cc;
+      border-bottom: 2px solid #0077cc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills-list li {
+      background: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      list-style: none;
+      font-weight: bold;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+    /* Projects Section */
+#projects {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+#projects li {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#projects li strong {
+  color: #0077cc;
+}
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      background: #0077cc;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Sharanya, a diligent and accomplished B.Tech graduate with a strong academic background. 
+        I am passionate about web development and data analysis, and I aim to contribute to dynamic teams 
+        by applying my knowledge and skills effectively.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Water Level Indicator:</strong> A project that monitors and indicates water levels using sensors.
+    </li>
+    <li>
+      <strong>Alcohol Detection Engine Locking System:</strong> Detects alcohol consumption and prevents the vehicle engine from starting.
+    </li>
+    <li>
+      <strong>Automatic Vehicle Parking System:</strong> A smart solution that automates vehicle parking using sensors and control logic.
+    </li>
+  </ul>
+</section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out using the form below:</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="bio">Message:</label>
+        <textarea id="bio" placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sharanya. All rights reserved.
+  </footer>
+</body>
+</html>
